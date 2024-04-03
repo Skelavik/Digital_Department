@@ -10,9 +10,9 @@ for word in words:
             if word in words:
                 words.remove(word)
             continue
-print(words)
 
-
+with open("output.txt","a",encoding="UTF8") as f:
+    f.write(' '.join(words))
 
 
 
